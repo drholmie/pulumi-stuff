@@ -2,19 +2,19 @@
 
 Uses clusters.makefile to create VPC and kubernetes cluster in GCP using pulumi (other functionalities haven't been ported to pulumi yet).
 
-First time execution
+First time execution: 
 make -f clusters.makefile bootstrap
 (installs dependencies)
 
-To create network
+To create network:
 make -f clusters.makefile create-network
 (currently asks for permission before creating)
 
-To create cluster
+To create cluster:
 make -f clusters.makefile create
 (currently asks for permission beofre creating)
 
-To delete cluster
+To delete cluster:
 make -f clusters.makefile delete
 (currently asks for permission before destroying cluser)
 
